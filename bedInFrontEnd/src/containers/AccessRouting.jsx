@@ -24,17 +24,19 @@ class accessRouting extends React.Component {
 
 	componentWillMount() {
     if(!this.props.userType) this.props.checkLoginFetch();
+
 	}
 
   componentWillReceiveProps (nextProps) {
-		if (!nextProps.isRequesting && !nextProps.userType) hashHistory.push('/login');
+		if (!nextProps.isRequesting && !nextProps.userType) return hashHistory.push('/login');
   }
 
 	render() {
 		if(this.props.isRequesting || !this.props.userType) return <p>Cargando... </p>
+    //if (!(this.props.location[1] === this.props.userType[0])) return <p>Error</p> 
 		return (
 			<div>
-			{React.cloneElement(this.props.children, { userType: this.props.userType } )}			
+				{React.cloneElement(this.props.children, { userType: this.props.userType } )}			
 			</div>
 		)
 	}
