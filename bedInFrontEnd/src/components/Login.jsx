@@ -11,7 +11,7 @@ function Login (props) {
 				<div className="container">
 					<div className="row">
 						<div className="col-xs-2 col-sm-4 col-lg-4"></div>
-						<div className="col-xs-8 col-sm-4 col-lg-4 " id="a1">
+						<div className="col-xs-8 col-sm-4 col-lg-4 " id="loginContainer">
 							<form onSubmit = {(e) => {
 								e.preventDefault();
 								props.fetchLogin(`${e.target.username.value}`,`${e.target.password.value}`);
@@ -25,7 +25,7 @@ function Login (props) {
 									<span className="input-group-addon"><i className="glyphicon glyphicon-lock"></i></span>
 									<input id="password" type="password" className="form-control" name="password" placeholder="Password"></input>
 								</div>
-								<button type="submit" className=" button " id="newbtn">Login</button>
+								<button type="submit" className=" button " id="buttonStyle">Login</button>
 							
 							</form>
 						</div>

@@ -26,11 +26,11 @@ function GlobalNavbar (props) {
               
                 <ul className="nav navbar-nav navbar-right ">
                   <li className="dropdown">
-                    <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="aLog">{props.username}
+                    <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="logLink">{props.username}
                       </a>
-                    <ul className="dropdown-menu text-xs-right" id="bLog" >
-                      <li><Link to={`/${props.data.userType}/perfil`} id="color"  >Perfil</Link></li>
-                      <li><Link onClick={props.logOut} to="#" id="color">Log Out </Link></li>
+                    <ul className="dropdown-menu text-xs-right" id="dropdownLogin" >
+                      <li><Link to={`/${props.data.userType}/perfil`} id="globalNavbarLinkColor"  >Perfil</Link></li>
+                      <li><Link onClick={props.logOut} to="#" id="globalNavbarLinkColor">Log Out </Link></li>
                     </ul>
                   </li>
 

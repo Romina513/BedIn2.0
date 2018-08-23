@@ -62,8 +62,7 @@ export function loginFetch(username,password) {
     .then(response => {
       const test = response.json()
       return test
-    }
-      )
+    })
     .then(data => {
       if (data.error) return dispatch(userFailedToLogin(data.error));
       return dispatch(userIsLoggedIn(data));

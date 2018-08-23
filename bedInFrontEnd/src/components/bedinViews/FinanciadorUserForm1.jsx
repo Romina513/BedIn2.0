@@ -16,7 +16,7 @@ function FinanciadorUserForm(props) {
                 </div>
                 <div className="modal-footer ">
                           <Link to="/Bedin" >
-                          <button type="submit" className=" button " data-dismiss="modal" id="newbtn11">Home</button></Link>
+                          <button type="submit" className=" button " data-dismiss="modal" id="modalFooterButton">Home</button></Link>
                 </div>
               </div>
             </div>
@@ -72,12 +72,12 @@ function FinanciadorUserForm(props) {
             </div>
         </div>
 
-       <div id="f1">
+       <div id="financiadorUserForm1Container">
 
           <label>Seleccione Solicitante del Usuario</label>
 
           {props.financiadors.map((financiador, i) =>
-          <div key={i} id="g1">
+          <div key={i} id="financiadorUserForm1Input">
            <input name="financiadors" type="radio" data-id={financiador._id} value={financiador.name} />{financiador.name}<br/>
           </div>
           )}
@@ -85,7 +85,7 @@ function FinanciadorUserForm(props) {
 
         <div className="form-group">
           <div className="col-sm-offset-2 col-sm-10">
-            <button type="submit" value="Save" className=" button" id="newbtn">Save</button>
+            <button type="submit" value="Save" className=" button" id="buttonStyle">Save</button>
           </div>
         </div>
 

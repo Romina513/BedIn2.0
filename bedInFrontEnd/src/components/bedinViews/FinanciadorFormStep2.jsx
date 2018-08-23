@@ -16,7 +16,7 @@ function FinanciadorFormStep2(props) {
                 </div>
                 <div className="modal-footer ">
                           <Link to="/Bedin" >
-                          <button type="submit" className=" button " data-dismiss="modal" id="newbtn11">Home</button></Link>
+                          <button type="submit" className=" button " data-dismiss="modal" id="modalFooterButton">Home</button></Link>
                 </div>
               </div>
             </div>
@@ -31,7 +31,7 @@ function FinanciadorFormStep2(props) {
            
             <div className="col-xs- col-sm-2 col-lg-2"></div>
             
-            <div className="col-xs-5 col-sm-4 col-lg-4" id="a">
+            <div className="col-xs-5 col-sm-4 col-lg-4" id="financiadorStep2Container">
               
                 <div className="form-horizontal">  
                   <div className="form-group " id="b">
@@ -63,7 +63,7 @@ function FinanciadorFormStep2(props) {
                           props.add(plan, hospitals)
                           document.querySelector('input').value = "";
                           document.querySelector('form').reset()
-                        }} id="newbtn" 
+                        }} id="buttonStyle" 
                       >Add</button> 
                 </div>
                 </div>

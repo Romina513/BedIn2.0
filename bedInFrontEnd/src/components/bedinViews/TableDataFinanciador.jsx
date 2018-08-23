@@ -9,8 +9,8 @@ function TableDataFinanciador(props) {
 
 	const tableBody = props.financiador.plans.map((plan, i) =>
     <tr key={i} style={{border:"1px solid black"}}>
-      <td className="a6" style={{border:"1px solid black"}}>{plan.name}</td>
-      <td className="a6" style={{border:"1px solid black"}}>{allHospitals(plan.hospitals)}
+      <td className="borderStyle" style={{border:"1px solid black"}}>{plan.name}</td>
+      <td className="borderStyle" style={{border:"1px solid black"}}>{allHospitals(plan.hospitals)}
       </td>
     </tr>)
 
@@ -26,10 +26,10 @@ function TableDataFinanciador(props) {
 						<p>DIRECCIÓN: {props.financiador.address}</p>
 					</div>
 					<table className= "table">
-					  <thead className="a6">
+					  <thead className="borderStyle">
 					    <tr >
-					      <th className="a6 b6">PLAN</th>
-					      <th className="a6 b6">HOSPITALES</th>
+					      <th className="borderStyle headColorStyle">PLAN</th>
+					      <th className="borderStyle headColorStyle">HOSPITALES</th>
 					    </tr>
 					  </thead>
 						<tbody>

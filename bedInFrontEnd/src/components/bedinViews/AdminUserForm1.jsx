@@ -50,7 +50,7 @@ function AdminUserForm(props) {
 
         <div className="form-group">
           <div className="col-sm-offset-2 col-sm-10">
-            <button type="submit" value="Save" className=" button" id="newbtn">Save</button>
+            <button type="submit" value="Save" className=" button" id="buttonStyle">Save</button>
           </div>
         </div>
       </form>

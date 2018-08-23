@@ -9,9 +9,9 @@ function FinanciadorFormStep1(props) {
           <div className="col-xs-8 col-sm-5 col-lg-5 ">
             <form className="form-horizontal" onSubmit={props.nextStep}>
               <div className="form-group ">
-                <div id="b1">
+                <div id="financiadorFormStep1Container">
 
-                  <span id="e1"><h>INGRESE NUEVA SOLICITANTE</h></span>
+                  <span id="financiadorFormStep1Title"><h>INGRESE NUEVA SOLICITANTE</h></span>
 
 
                 </div>
@@ -44,7 +44,7 @@ function FinanciadorFormStep1(props) {
 
                 <div className="form-group">
                   <div className="col-sm-offset-2 col-sm-10">
-                    <button className="  button" type="submit" value="Save" id="newbtn">Next</button>
+                    <button className="  button" type="submit" value="Save" id="buttonStyle">Next</button>
                   </div>
                 </div>
             </form>

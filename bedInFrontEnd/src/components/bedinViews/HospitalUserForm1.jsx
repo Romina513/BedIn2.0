@@ -15,7 +15,7 @@ let popup = null;
                 </div>
                 <div className="modal-footer ">
                           <Link to="/Bedin" >
-                          <button type="submit" className=" button " data-dismiss="modal" id="newbtn11">Home</button></Link>
+                          <button type="submit" className=" button " data-dismiss="modal" id="modalFooterButton">Home</button></Link>
                 </div>
               </div>
             </div>
@@ -75,10 +75,10 @@ let popup = null;
               </div>
         </div>
 
-        <div id="f1">
+        <div id="financiadorUserForm1Container">
           <label>Seleccione Hospital del Usuario</label>
           {props.hospitals.map((hospital, i) =>
-            <div key={i} id="g1">
+            <div key={i} id="financiadorUserForm1Input">
               <input name="hospitals" type="radio" data-id={hospital._id} value={hospital.name} />{hospital.name}<br/>
             </div>
           )}
@@ -86,7 +86,7 @@ let popup = null;
 
         <div className="form-group">
           <div className="col-sm-offset-2 col-sm-10">
-         <button className=" button" type="submit" value="Save" id="newbtn">Save</button>
+         <button className=" button" type="submit" value="Save" id="buttonStyle">Save</button>
           </div>
         </div>
       </form>
